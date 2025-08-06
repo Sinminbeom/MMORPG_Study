@@ -1,25 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.EventSystems;
-using static Define;
-
-public class GameScene : BaseScene
-{
-    protected override void Awake()
-    {
-        base.Awake();
-
-#if UNITY_EDITOR
-        gameObject.AddComponent<CaptureScreenShot>();
-#endif
-
-        Debug.Log("@>> GameScene Init()");
-        SceneType = EScene.GameScene;
-
-    }
-    
-    public override void Clear()
-    {
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e414aba318a33685675de0e742603e242709a67ec86985c6869895ee3c3bda0d
+size 809

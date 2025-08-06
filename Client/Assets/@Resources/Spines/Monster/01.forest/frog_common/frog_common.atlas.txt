@@ -1,21 +1,3 @@
-frog_common.png
-size:240,148
-filter:Linear,Linear
-pma:true
-body
-bounds:3,3,140,123
-rotate:90
-l_arm
-bounds:178,89,56,54
-offsets:1,1,58,56
-l_leg
-bounds:178,3,37,39
-offsets:1,1,39,41
-r_arm
-bounds:178,45,41,58
-offsets:1,1,43,60
-rotate:90
-shadow
-bounds:129,6,137,46
-offsets:19,23,175,91
-rotate:90
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2e32b0f9e46b75d39adcbb42a72ec3f5ff88deede0022896a03c78fc89825fe
+size 313

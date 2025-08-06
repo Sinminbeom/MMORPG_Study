@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Server.Data
+namespace GameServer
 {
 	[Serializable]
 	public class ServerConfig

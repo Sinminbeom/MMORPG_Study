@@ -1,25 +1,3 @@
-ghost.png
-size:424,180
-filter:Linear,Linear
-pma:true
-body
-bounds:3,3,173,213
-offsets:21,17,211,248
-rotate:90
-hat
-bounds:324,126,1,1
-head
-bounds:219,25,102,102
-offsets:24,37,152,171
-r_hand
-bounds:359,93,58,83
-offsets:34,17,148,173
-r_lowerarm
-bounds:390,44,31,46
-offsets:3,3,37,52
-r_upperarm
-bounds:324,34,63,56
-offsets:3,3,69,62
-shadow
-bounds:219,130,137,46
-offsets:19,23,175,91
+version https://git-lfs.github.com/spec/v1
+oid sha256:5aefa98de745d6365cbe8ab2698f3351eeba1b2209059eb4be91c9ede7be894f
+size 403
