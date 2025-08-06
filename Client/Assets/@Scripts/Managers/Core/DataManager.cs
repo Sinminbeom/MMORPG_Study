@@ -1,25 +1,3 @@
-using System.Collections.Generic;
-using Data;
-using Newtonsoft.Json;
-using UnityEngine;
-
-public interface ILoader<Key, Value>
-{
-    Dictionary<Key, Value> MakeDict();
-    bool Validate();
-}
-
-public class DataManager
-{
-    public void Init()
-    {
-        
-    }
-
-    private Loader LoadJson<Loader, Key, Value>(string path) where Loader : ILoader<Key, Value>
-    {
-		TextAsset textAsset = Managers.Resource.Load<TextAsset>($"{path}");
-        return JsonConvert.DeserializeObject<Loader>(textAsset.text);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0a618e9d071de87d05b496546dd363cc9c73416e4b925b6107122115a4dc1cec
+size 2093

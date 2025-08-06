@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 using ServerCore;
 using System.Net;
 using Google.Protobuf;
-using Server.Game;
+using GameServer;
 using Server.Data;
+using System.Numerics;
 
 namespace Server
 {
@@ -17,6 +18,7 @@ namespace Server
 		public long AccountDbId { get; set; }
 		public int SessionId { get; set; }
 
+		public Hero MyHero { get; set; }
 		object _lock = new object();
 
 		#region Network
@@ -49,14 +51,23 @@ namespace Server
 
 		public override void OnDisconnected(EndPoint endPoint)
 		{
-			SessionManager.Instance.Remove(this);
+            GameLogic.Instance.Push(() =>
+            {
+                if (MyHero == null)
+                    return;
+
+                GameRoom room = GameLogic.Instance.Find(1);
+                room.Push(room.LeaveGame, MyHero.ObjectId, false);
+            });
+
+            SessionManager.Instance.Remove(this);
 
 			Console.WriteLine($"OnDisconnected : {endPoint}");
 		}
 
 		public override void OnSend(int numOfBytes)
 		{
-			Console.WriteLine($"Transferred bytes: {numOfBytes}");
+			//Console.WriteLine($"Transferred bytes: {numOfBytes}");
 		}
 		#endregion
 	}

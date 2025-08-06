@@ -1,31 +1,3 @@
-using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-
-public class UI_SubItem : UI_Base
-{
-    [SerializeField]
-    protected ScrollRect _parentScrollRect;
-
-    protected override void Awake()
-    {
-        base.Awake();
-
-        _parentScrollRect = Utils.FindAncestor<ScrollRect>(gameObject);
-    }
-
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        _parentScrollRect.OnBeginDrag(eventData);
-    }
-
-    public virtual void OnDrag(PointerEventData eventData)
-    {
-        _parentScrollRect.OnDrag(eventData);
-    }
-
-    public virtual void OnEndDrag(PointerEventData eventData)
-    {
-        _parentScrollRect.OnEndDrag(eventData);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f4e34a5c8bbc79f94979f2e6a218d46da8171f369551a64fb059ef88d29ddd2
+size 711

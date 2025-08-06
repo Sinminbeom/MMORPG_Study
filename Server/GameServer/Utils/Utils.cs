@@ -6,7 +6,7 @@ using System.Text;
 using System.Net.Sockets;
 using System.Net;
 
-namespace Server
+namespace GameServer
 {
     public static class Utils
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace Server.Data
+namespace GameServer
 {
 	public interface ILoader<Key, Value>
 	{

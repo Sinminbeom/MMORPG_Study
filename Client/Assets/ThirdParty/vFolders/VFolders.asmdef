@@ -1,16 +1,3 @@
-{
-    "name": "VFolders",
-    "rootNamespace": "",
-    "references": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97ae85b4599f392e9b2a5b88e6bc24bb46298a17d470f6be9cdc8dda22bd76e4
+size 378

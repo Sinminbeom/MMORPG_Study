@@ -1,9 +1,9 @@
-﻿using Server.Game;
+﻿using GameServer;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Server
+namespace GameServer
 {
 	public static class Extensions
 	{

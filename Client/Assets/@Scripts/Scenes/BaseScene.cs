@@ -1,19 +1,3 @@
-﻿using UnityEngine;
-using UnityEngine.EventSystems;
-
-public abstract class BaseScene : MonoBehaviour
-{
-    public Define.EScene SceneType { get; protected set; } = Define.EScene.Unknown;
-
-    protected virtual void Awake()
-	{
-		Object obj = GameObject.FindObjectOfType(typeof(EventSystem));
-		if (obj == null)
-			Managers.Resource.Instantiate("UI/EventSystem").name = "@EventSystem";
-	}
-
-	protected virtual void Start() { }
-	protected virtual void Update() { }
-
-	public abstract void Clear();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:22d96d5dd9417bde60025bc64835c8702f25e7622f6b9ddf7a91411b8b4365b9
+size 516
